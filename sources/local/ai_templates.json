@@ -45,28 +45,63 @@
       "description": "Self-hostable AI config management platform for AGENTS.md, CLAUDE.md, Cursor rules, and 30+ AI assistant formats. Source: https://github.com/GeiserX/LynxPrompt",
       "env": [
         {
-          "default": "",
-          "label": "Session secret \u2014 generate with: openssl rand -base64 32",
+          "description": "Generate with: openssl rand -hex 32",
+          "label": "Session secret (required)",
           "name": "NEXTAUTH_SECRET"
         },
         {
-          "default": "http://localhost:3000",
-          "label": "Public base URL",
+          "description": "Generate with: openssl rand -hex 24",
+          "label": "Database password (required)",
+          "name": "DB_PASSWORD"
+        },
+        {
+          "description": "The https:// address of your reverse proxy, such as https://lynxprompt.example.com. Sign-in does not work over plain http.",
+          "label": "Public HTTPS address (required)",
           "name": "APP_URL"
         },
         {
+          "description": "Sign-in is a link sent by mail",
+          "label": "SMTP server (required)",
+          "name": "SMTP_HOST"
+        },
+        {
+          "description": "From address of the sign-in mails",
+          "label": "Sender address (required)",
+          "name": "SMTP_FROM"
+        },
+        {
+          "default": "587",
+          "description": "465 uses TLS",
+          "label": "SMTP port",
+          "name": "SMTP_PORT"
+        },
+        {
           "default": "",
-          "label": "Super-admin account email",
+          "description": "Leave empty if the server needs no login",
+          "label": "SMTP user",
+          "name": "SMTP_USER"
+        },
+        {
+          "default": "",
+          "label": "SMTP password",
+          "name": "SMTP_PASSWORD"
+        },
+        {
+          "default": "",
+          "description": "This address becomes super-admin on its second sign-in",
+          "label": "Super-admin email",
           "name": "SUPERADMIN_EMAIL"
         }
       ],
       "logo": "https://avatars.githubusercontent.com/u/9169332",
       "name": "lynxprompt",
+      "note": "Sign-in is a link sent by mail, so fill in the SMTP fields. Put the stack behind an HTTPS reverse proxy and set APP_URL to that address: browsers refuse the sign-in cookies on plain http, localhost included. Generate the secrets with openssl rand -hex 32 and openssl rand -hex 24. All options: https://github.com/GeiserX/LynxPrompt/blob/main/env.example",
       "platform": "linux",
       "repository": {
         "stackfile": "sources/stacks/lynxprompt.yml",
         "url": "https://github.com/lissy93/portainer-templates"
       },
+      "restart_policy": "unless-stopped",
       "title": "LynxPrompt",
       "type": 3
     }
