@@ -95,7 +95,7 @@
       ],
       "logo": "https://avatars.githubusercontent.com/u/9169332",
       "name": "lynxprompt",
-      "note": "Sign-in is a link sent by mail, so fill in the SMTP fields. Put the stack behind an HTTPS reverse proxy and set APP_URL to that address: browsers refuse the sign-in cookies on plain http, localhost included. Generate the secrets with openssl rand -hex 32 and openssl rand -hex 24. All options: https://github.com/GeiserX/LynxPrompt/blob/main/env.example",
+      "note": "LynxPrompt listens on port 3000 and keeps its data in the pgdata volume. Sign-in is a link sent by mail, so fill in the SMTP fields. Put the stack behind an HTTPS reverse proxy and set APP_URL to that address: browsers refuse the sign-in cookies on plain http, localhost included. The super-admin email gets its role on its second sign-in. Generate the secrets with openssl rand -hex 32 and openssl rand -hex 24. All options: https://github.com/GeiserX/LynxPrompt/blob/main/env.example",
       "platform": "linux",
       "repository": {
         "stackfile": "sources/stacks/lynxprompt.yml",
