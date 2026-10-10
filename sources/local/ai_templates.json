@@ -55,8 +55,8 @@
           "name": "DB_PASSWORD"
         },
         {
-          "description": "The https:// address of your reverse proxy, such as https://lynxprompt.example.com. Sign-in does not work over plain http.",
-          "label": "Public HTTPS address (required)",
+          "description": "Such as http://192.168.1.10:3000 or https://lynxprompt.example.com",
+          "label": "Address you open it on (required)",
           "name": "APP_URL"
         },
         {
@@ -88,14 +88,14 @@
         },
         {
           "default": "",
-          "description": "This address becomes super-admin on its second sign-in",
+          "description": "This address becomes super-admin on its first sign-in",
           "label": "Super-admin email",
           "name": "SUPERADMIN_EMAIL"
         }
       ],
       "logo": "https://avatars.githubusercontent.com/u/9169332",
       "name": "lynxprompt",
-      "note": "LynxPrompt listens on port 3000 and keeps its data in the pgdata volume. Sign-in is a link sent by mail, so fill in the SMTP fields. Put the stack behind an HTTPS reverse proxy and set APP_URL to that address: browsers refuse the sign-in cookies on plain http, localhost included. The super-admin email gets its role on its second sign-in. Generate the secrets with openssl rand -hex 32 and openssl rand -hex 24. All options: https://github.com/GeiserX/LynxPrompt/blob/main/env.example",
+      "note": "LynxPrompt listens on port 3000 and keeps its database in the pgdata volume and uploaded images in the uploads volume. Sign-in is a link sent by mail, so fill in the SMTP fields, and set APP_URL to the address you open it on. Generate the secrets with openssl rand -hex 32 and openssl rand -hex 24. All options: https://github.com/GeiserX/LynxPrompt/blob/main/env.example",
       "platform": "linux",
       "repository": {
         "stackfile": "sources/stacks/lynxprompt.yml",

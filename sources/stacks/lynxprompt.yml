@@ -16,11 +16,13 @@ services:
       retries: 5
 
   lynxprompt:
-    image: drumsergio/lynxprompt:2.1.39
+    image: drumsergio/lynxprompt:2.1.40
     platform: linux/amd64
     restart: unless-stopped
     ports:
       - "3000:3000"
+    volumes:
+      - uploads:/data/uploads
     depends_on:
       postgres:
         condition: service_healthy
@@ -55,3 +57,4 @@ services:
 
 volumes:
   pgdata:
+  uploads:
