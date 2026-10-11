@@ -111,6 +111,42 @@
           "container": "/config"
         }
       ]
+    },
+    {
+      "categories": [
+        "Monitoring"
+      ],
+      "description": "Uptime and synthetic monitoring with status pages, incidents and alerts. Checks HTTP, DNS, TCP, ICMP, TLS expiry, databases, message brokers, heartbeats and headless browser scenarios. Source: https://github.com/fclairamb/solidping",
+      "env": [
+        {
+          "name": "SP_NODE_NAME",
+          "label": "Node name",
+          "default": "solidping",
+          "description": "Worker name, lowercase letters, digits and dashes, starting with a letter (3 to 21 characters). The server refuses to start without a valid one."
+        },
+        {
+          "name": "SP_BASE_URL",
+          "label": "Public URL",
+          "default": "http://localhost:4000",
+          "description": "URL people use to reach SolidPing. Used in links and notifications."
+        }
+      ],
+      "image": "ghcr.io/fclairamb/solidping:latest",
+      "logo": "https://raw.githubusercontent.com/fclairamb/solidping/main/res/logo_256.png",
+      "name": "solidping",
+      "note": "Open <code>http://&lt;your-host&gt;:4000</code>. First login: <code>admin@solidping.io</code> / <code>solidpass</code>, organization <code>default</code>. You are asked to set a new password right away. The SQLite database and uploads live in the <code>/data</code> volume. No secret is needed to start. Configuration: <a href=\"https://docs.solidping.io/configuration/\">docs.solidping.io</a>",
+      "platform": "linux",
+      "ports": [
+        "4000:4000/tcp"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "SolidPing",
+      "type": 1,
+      "volumes": [
+        {
+          "container": "/data"
+        }
+      ]
     }
   ],
   "version": "3"
