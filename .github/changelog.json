@@ -1,6 +1,23 @@
 {
   "entries": [
     {
+      "version": "v1.3.6",
+      "previous": "v1.3.5",
+      "date": "2026-10-13",
+      "templateCount": 797,
+      "added": [],
+      "removed": [],
+      "renamed": [],
+      "updated": [
+        {
+          "title": "LibreDB Studio",
+          "fields": [
+            "description"
+          ]
+        }
+      ]
+    },
+    {
       "version": "v1.3.5",
       "previous": "v1.3.4",
       "date": "2026-10-12",
