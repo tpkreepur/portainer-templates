@@ -1,6 +1,25 @@
 {
   "entries": [
     {
+      "version": "v1.3.7",
+      "previous": "v1.3.6",
+      "date": "2026-10-13",
+      "templateCount": 798,
+      "added": [
+        "SolidPing"
+      ],
+      "removed": [],
+      "renamed": [],
+      "updated": [
+        {
+          "title": "LibreDB Studio",
+          "fields": [
+            "description"
+          ]
+        }
+      ]
+    },
+    {
       "version": "v1.3.6",
       "previous": "v1.3.5",
       "date": "2026-10-13",
