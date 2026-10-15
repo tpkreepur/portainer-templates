@@ -1,6 +1,29 @@
 {
   "entries": [
     {
+      "version": "v1.3.9",
+      "previous": "v1.3.8",
+      "date": "2026-10-15",
+      "templateCount": 801,
+      "added": [
+        "Audiosilo",
+        "Craft-apps",
+        "Nomacs"
+      ],
+      "removed": [],
+      "renamed": [],
+      "updated": [
+        {
+          "title": "LynxPrompt",
+          "fields": [
+            "env",
+            "note",
+            "restart_policy"
+          ]
+        }
+      ]
+    },
+    {
       "version": "v1.3.8",
       "previous": "v1.3.7",
       "date": "2026-10-15",
