@@ -1,6 +1,25 @@
 {
   "entries": [
     {
+      "version": "v1.3.11",
+      "previous": "v1.3.10",
+      "date": "2026-10-16",
+      "templateCount": 802,
+      "added": [
+        "Seawise.io Client"
+      ],
+      "removed": [],
+      "renamed": [],
+      "updated": [
+        {
+          "title": "LibreDB Studio",
+          "fields": [
+            "description"
+          ]
+        }
+      ]
+    },
+    {
       "version": "v1.3.10",
       "previous": "v1.3.9",
       "date": "2026-10-16",
