@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "version": "v1.3.12",
+      "previous": "v1.3.11",
+      "date": "2026-10-16",
+      "templateCount": 821,
+      "added": [
+        "AFFiNE",
+        "Apache Answer",
+        "BentoPDF",
+        "Bytebase",
+        "Cloudreve",
+        "ConvertX",
+        "CyberChef",
+        "Etherpad",
+        "Firefly III",
+        "Grist",
+        "Halo",
+        "Kanboard",
+        "RSSHub",
+        "Readeck",
+        "Seerr",
+        "SiYuan",
+        "Super Productivity",
+        "Termix",
+        "Wallos"
+      ],
+      "removed": [],
+      "renamed": [],
+      "updated": []
+    },
+    {
       "version": "v1.3.11",
       "previous": "v1.3.10",
       "date": "2026-10-16",
