@@ -10,6 +10,10 @@ This repo compiles Portainer app templates from lots of [sources](../sources.csv
 > **📖 New to Portainer templates? Follow the full guide: [Creating a Template](CREATING_A_TEMPLATE.md)**<br>
 > It walks through every field with examples, how to test your template, and a checklist to go through before you submit.
 
+> [!TIP]
+> Templates added into any of our sources will be automatically pulled into this repo nightly.
+> For example, you can submit self-hosted apps to [portainer-templates-extras](https://github.com/notAFlightRisk/portainer-templates-extras), and they'll be included in this repo once merged.
+
 The easiest way is to keep the template in your own repo. We pull it in every day, so you can update it whenever you like, without needing another PR here.
 
 1. Add a `portainer-template.json` file to your repo, containing a single template
