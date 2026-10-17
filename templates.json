@@ -326,12 +326,16 @@
         {
           "name": "AIMM_WEBUI_AUTH",
           "label": "Web UI sign-in",
-          "description": "Who signs you in to the web UI. local needs the web UI password below. Behind a reverse proxy that signs users in, see the Docker installation guide for the variables each mode needs.",
+          "description": "Who signs you in to the web UI. auto uses the Facebook login when it is set, otherwise the web UI password below; local always needs the web UI password. Behind a reverse proxy that signs users in, see the Docker installation guide for the variables each mode needs.",
           "select": [
             {
-              "text": "aimm, with the Facebook username and password",
-              "value": "facebook",
+              "text": "aimm, with the Facebook login if set, otherwise the web UI password",
+              "value": "auto",
               "default": true
+            },
+            {
+              "text": "aimm, with the Facebook username and password",
+              "value": "facebook"
             },
             {
               "text": "aimm, with the web UI username and password below",
@@ -358,13 +362,13 @@
         {
           "name": "AIMM_WEBUI_USERNAME",
           "label": "Web UI username",
-          "description": "With local sign-in: the username of the web UI.",
+          "description": "With local sign-in, or auto without a Facebook login: the username of the web UI.",
           "default": "admin"
         },
         {
           "name": "AIMM_WEBUI_PASSWORD",
           "label": "Web UI password",
-          "description": "With local sign-in (required): the password of the web UI, unrelated to the Facebook password."
+          "description": "With local sign-in (required), or auto without a Facebook login: the password of the web UI, unrelated to the Facebook password."
         }
       ],
       "maintainer": "https://github.com/BoPeng/ai-marketplace-monitor/",
@@ -14303,7 +14307,7 @@
       "type": 1,
       "title": "LibreDB Studio",
       "name": "libredb-studio",
-      "description": "Self-hosted database IDE you use from a browser, covering thirty-nine engines - PostgreSQL, MySQL, Oracle, SQL Server, MongoDB, Redis, ClickHouse, Cassandra, Elasticsearch and more - with a schema browser and query history on all of them, and ER diagrams and EXPLAIN plans wherever the engine declares keys or returns a plan. Source: https://github.com/libredb/libredb-studio",
+      "description": "Self-hosted database IDE you use from a browser, covering forty-one engines - PostgreSQL, MySQL, Oracle, SQL Server, MongoDB, Redis, ClickHouse, Cassandra, Elasticsearch and more - with a schema browser and query history on all of them, and ER diagrams and EXPLAIN plans wherever the engine declares keys or returns a plan. Source: https://github.com/libredb/libredb-studio",
       "categories": [
         "Database",
         "Tools",
