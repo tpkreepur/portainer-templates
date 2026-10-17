@@ -1,6 +1,29 @@
 {
   "entries": [
     {
+      "version": "v1.3.13",
+      "previous": "v1.3.12",
+      "date": "2026-10-17",
+      "templateCount": 821,
+      "added": [],
+      "removed": [],
+      "renamed": [],
+      "updated": [
+        {
+          "title": "AI Marketplace Monitor",
+          "fields": [
+            "env"
+          ]
+        },
+        {
+          "title": "LibreDB Studio",
+          "fields": [
+            "description"
+          ]
+        }
+      ]
+    },
+    {
       "version": "v1.3.12",
       "previous": "v1.3.11",
       "date": "2026-10-16",
