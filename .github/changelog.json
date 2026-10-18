@@ -1,6 +1,30 @@
 {
   "entries": [
     {
+      "version": "v1.3.14",
+      "previous": "v1.3.13",
+      "date": "2026-10-18",
+      "templateCount": 834,
+      "added": [
+        "CommaFeed",
+        "Donetick",
+        "JupyterLab",
+        "KitchenOwl",
+        "LibreTranslate",
+        "Opengist",
+        "SilverBullet",
+        "TREK",
+        "Wakapi",
+        "Zipline",
+        "copyparty",
+        "drawDB",
+        "ezBookkeeping"
+      ],
+      "removed": [],
+      "renamed": [],
+      "updated": []
+    },
+    {
       "version": "v1.3.13",
       "previous": "v1.3.12",
       "date": "2026-10-17",
