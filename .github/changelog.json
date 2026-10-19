@@ -1,6 +1,22 @@
 {
   "entries": [
     {
+      "version": "v1.3.15",
+      "previous": "v1.3.14",
+      "date": "2026-10-19",
+      "templateCount": 839,
+      "added": [
+        "2FAuth",
+        "LubeLogger",
+        "NocoBase",
+        "Teable",
+        "Verdaccio"
+      ],
+      "removed": [],
+      "renamed": [],
+      "updated": []
+    },
+    {
       "version": "v1.3.14",
       "previous": "v1.3.13",
       "date": "2026-10-18",
