@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "version": "v1.3.16",
+      "previous": "v1.3.15",
+      "date": "2026-10-20",
+      "templateCount": 841,
+      "added": [
+        "DbGate",
+        "Langflow"
+      ],
+      "removed": [],
+      "renamed": [],
+      "updated": [
+        {
+          "title": "Craft-apps",
+          "fields": [
+            "description"
+          ]
+        }
+      ]
+    },
+    {
       "version": "v1.3.15",
       "previous": "v1.3.14",
       "date": "2026-10-19",
